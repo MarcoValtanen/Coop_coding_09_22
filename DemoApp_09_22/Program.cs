@@ -4,47 +4,32 @@
     {
         static void Main(string[] args)
         {
+            //Skapar objekten
+           AgeChecker ageChecker = new AgeChecker();
+            Calculator calculator = new Calculator();
+
             bool running = true;
 
             while (running)
             {
                 Console.Clear();
-
-                Console.WriteLine("=== KLASSENS VERKTYGSLÅDA ===");
+                Console.WriteLine("---Klassens verktygsläda---");
                 Console.WriteLine();
-                Console.WriteLine("1. Hälsa på användaren");
-                Console.WriteLine("2. Kontrollera ålder");
-                Console.WriteLine("3. Enkel miniräknare");
-                Console.WriteLine("4. Multiplikationstabell");
-                Console.WriteLine("5. Gissa talet");
-                Console.WriteLine("0. Avsluta");
+                Console.WriteLine("1. Kolla åldern");
+                Console.WriteLine("2. Räkna med siffror");
                 Console.WriteLine();
 
-                Console.Write("Välj: ");
+                Console.Write("Välj, använd 0 för att avsluta: ");
                 string choice = Console.ReadLine();
-
-                Console.Clear();
 
                 switch (choice)
                 {
                     case "1":
-                        Greeting();
+                        ageChecker.Run();
                         break;
 
                     case "2":
-                        CheckAge();
-                        break;
-
-                    case "3":
-                        Calculator();
-                        break;
-
-                    case "4":
-                        MultiplicationTable();
-                        break;
-
-                    case "5":
-                        GuessNumber();
+                        calculator.Run();
                         break;
 
                     case "0":
@@ -52,47 +37,14 @@
                         break;
 
                     default:
-                        Console.WriteLine("Felaktigt val.");
+                        Console.WriteLine("Felaktig inmatning");
                         break;
-                }
 
-                if (running)
-                {
-                    Console.WriteLine();
-                    Console.WriteLine("Tryck på valfri tangent...");
-                    Console.ReadKey();
                 }
+                Console.WriteLine();
+                Console.WriteLine("Välj en funktion från verktygslådan");
+                Console.ReadKey();
             }
-        }
-
-        // ELE V 1
-        static void Greeting()
-        {
-            Console.WriteLine("Den här funktionen ska elev 1 utveckla.");
-        }
-
-        // ELEV 2
-        static void CheckAge()
-        {
-            Console.WriteLine("Den här funktionen ska elev 2 utveckla.");
-        }
-
-        // ELEV 3
-        static void Calculator()
-        {
-            Console.WriteLine("Den här funktionen ska elev 3 utveckla.");
-        }
-
-        // ELEV 4
-        static void MultiplicationTable()
-        {
-            Console.WriteLine("Den här funktionen ska elev 4 utveckla.");
-        }
-
-        // ELEV 5
-        static void GuessNumber()
-        {
-            Console.WriteLine("Den här funktionen ska elev 5 utveckla.");
         }
     }
 }
