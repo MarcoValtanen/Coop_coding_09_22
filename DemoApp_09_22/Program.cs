@@ -15,11 +15,11 @@
                 Console.Clear();
                 Console.WriteLine("---Klassens verktygsläda---");
                 Console.WriteLine();
-                Console.WriteLine("1. Kolla åldern");
-                Console.WriteLine("2. Räkna med siffror");
-                Console.WriteLine("3. Gissa numret");
-                Console.WriteLine("4. Inch till cm konvertering");
-                Console.WriteLine("5. Km till Miles konvertering");
+                Console.WriteLine("1. Kolla åldern"); // Marco 
+                Console.WriteLine("2. Räkna med siffror"); // Mattias
+                Console.WriteLine("3. Gissa numret");// Martin
+                Console.WriteLine("4. Inch till cm konvertering"); //Ben
+                Console.WriteLine("5. Km till Miles konvertering"); //Ammar
                 Console.WriteLine();
 
                 Console.Write("Välj, använd 0 för att avsluta: ");
