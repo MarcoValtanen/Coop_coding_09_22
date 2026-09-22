@@ -17,6 +17,9 @@
                 Console.WriteLine();
                 Console.WriteLine("1. Kolla åldern");
                 Console.WriteLine("2. Räkna med siffror");
+                Console.WriteLine("3. Gissa numret");
+                Console.WriteLine("4. Inch till cm konvertering");
+                Console.WriteLine("5. Km till Miles konvertering");
                 Console.WriteLine();
 
                 Console.Write("Välj, använd 0 för att avsluta: ");
