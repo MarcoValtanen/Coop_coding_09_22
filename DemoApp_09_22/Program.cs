@@ -3,7 +3,7 @@
     internal class Program
     {
         static void Main(string[] args)
-        {
+        { 
             //Skapar objekten
            AgeChecker ageChecker = new AgeChecker();
             Calculator calculator = new Calculator();
