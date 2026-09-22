@@ -34,7 +34,15 @@
                     case "2":
                         calculator.Run();
                         break;
+                    case "3":
 
+                        break;
+                    case "4":
+
+                        break;
+                    case "5":
+
+                        break;
                     case "0":
                         running = false;
                         break;
