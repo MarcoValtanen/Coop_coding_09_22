@@ -8,7 +8,7 @@
             SayHello("Reidar");
 
             int result = Add(3, 3);
-            int.Parse("129");
+            int.Parse("130");
             Math.Max(11,12);
             Console.WriteLine(result);
         }
